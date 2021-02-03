@@ -1,6 +1,6 @@
 import './App.scss';
-import Add from './components/Add';
-import Filter from './components/Filter';
+import Add from './containers/Add';
+import Filter from './containers/Filter';
 import Todos from './components/Todos';
 
 function App() {

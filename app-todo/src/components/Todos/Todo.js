@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Todo = () => {
+const Todo = ({ name }) => {
     return (
         <li className="list-group-item d-flex flex-row justify-content-between align-items-center list-group-item-action" >
-        <span> Finir la todo-list </span>
+        <span> { name } </span>
         <span>
           <input className="mx-3"  type="checkbox" />
           <button className="btn btn-sm btn-danger">delete</button>
