@@ -6,7 +6,7 @@ export const todos = (state = [], action) => {
     case ADD_TODO :
       return [ ...state, action.todo ];
     case DELETE_TODO :
-      return state.data.filter((todo, index) => index !== action.index);
+      return state.filter((todo, index) => index !== action.index);
     case TOGGLE_TODO :
       return state.map((todo, index) => {
         if (index === action.index) {
